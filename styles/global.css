@@ -1,0 +1,16 @@
+html[data-theme="light"] body {
+    background: radial-gradient(at 71% 77%,
+            #FFCC81 0,
+            transparent 21%),
+        radial-gradient(at 36% 47%, #F0E7DB 0, transparent 50%),
+        radial-gradient(at 54% 29%, #9BFFCF 0, transparent 28%),
+        radial-gradient(at 45% 51%, #FFCC81 0, transparent 53%),
+        radial-gradient(at 73% 44%, #9BFFCF 0, transparent 54%),
+        radial-gradient(at 24% 7%, #F0E7DB 0, transparent 40%),
+        radial-gradient(at 76% 46%, #FFCC81 0, transparent 50%);
+}
+
+html,
+body {
+    font-size: 18px;
+}

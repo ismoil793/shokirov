@@ -28,22 +28,23 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container maxW="container.md">
       <Box
         borderRadius="lg"
+        mt={10}
         mb={6}
         p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hello, I&apos;m a Software Engineer based in Tashkent, Uzbekistan!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Ismoil Shokirov
           </Heading>
           <p>Digital Craftsman ( Artist / Developer / Designer )</p>
         </Box>
@@ -64,7 +65,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/kirov-rounded.jpg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -79,7 +80,7 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
+          Ismoil is a freelance full-stack developer based in Tashkent with a
           passion for building digital services/stuff he wants. He has a knack
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
@@ -97,7 +98,7 @@ const Home = () => (
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
               My portfolio
             </Button>
           </NextLink>
@@ -130,18 +131,17 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          I ❤️
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
+          Mechanical keyboards, Swimming, Music,{' '}
           <Link href="https://illust.odoruinu.net/" target="_blank">
             Drawing
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
+          ,{' '}
+          <Link href="https://gallery.shokirov.uz#portfolio" target="_blank">
             Photography
           </Link>
-          , Leica, Machine Learning
         </Paragraph>
       </Section>
 
@@ -154,7 +154,7 @@ const Home = () => (
             <Link href="https://github.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="lightblue"
                 leftIcon={<IoLogoGithub />}
               >
                 @craftzdog
@@ -165,7 +165,7 @@ const Home = () => (
             <Link href="https://twitter.com/inkdrop_app" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="lightblue"
                 leftIcon={<IoLogoTwitter />}
               >
                 @inkdrop_app (English)
@@ -176,7 +176,7 @@ const Home = () => (
             <Link href="https://twitter.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="lightblue"
                 leftIcon={<IoLogoTwitter />}
               >
                 @craftzdog (日本語)
@@ -187,8 +187,9 @@ const Home = () => (
             <Link href="https://instagram.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="lightblue"
                 leftIcon={<IoLogoInstagram />}
+                marginBottom={5}
               >
                 @craftzdog
               </Button>
@@ -215,14 +216,14 @@ const Home = () => (
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
               Popular posts
             </Button>
           </NextLink>
         </Box>
-      </Section>
-    </Container>
-  </Layout>
+      </Section >
+    </Container >
+  </Layout >
 )
 
 export default Home
