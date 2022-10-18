@@ -14,3 +14,14 @@ html,
 body {
     font-size: 18px;
 }
+
+.react-logo {
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.nav-logo:hover .react-logo {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
