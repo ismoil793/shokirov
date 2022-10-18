@@ -26,14 +26,13 @@ const Logo = () => {
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
-          <FaReact />{" "}
+          <FaReact />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
-            ml={3}
           >
-            Ismoil Shokirov
+            <span style={{ marginLeft: 4 }}>Ismoil Shokirov</span>
           </Text>
         </LogoBox>
       </a>
