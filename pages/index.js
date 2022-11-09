@@ -85,7 +85,7 @@ const Home = () => (
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
           hanging out with his camera and traveling. Currently, he is studying 
-          Master\'s degree in Computer Science.
+          Master&apos;s degree in Computer Science.
           {/* <NextLink href="/works/inkdrop" passHref scroll={false}> */}
             {/* <Link>Inkdrop</Link> */}
           {/* </NextLink> */}
