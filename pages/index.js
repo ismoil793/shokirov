@@ -38,7 +38,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a Software Engineer based in Tashkent, Uzbekistan!
+        Hello, I&apos;m a Software Engineer based in Fairfield, Iowa!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -80,21 +80,20 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Ismoil is a freelance full-stack developer based in Tashkent with a
+          Ismoil is a full-stack developer from Tashkent, Uzbekistan with a
           passion for building digital services/stuff he wants. He has a knack
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
+          hanging out with his camera and traveling. Currently, he is studying 
+          Master's degree in Computer Science.
+          {/* <NextLink href="/works/inkdrop" passHref scroll={false}> */}
+            {/* <Link>Inkdrop</Link> */}
+          {/* </NextLink> */}
+          {' '}In his free time he posts blogs about programming tricks &quot;
+          <NextLink href="https://blog.shokirov.uz" passHref>
+            <Link target="_blank">Ismoil logs</Link>
           </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+          &quot;
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -110,22 +109,24 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1998</BioYear>
+          Born in Tashkent, Uzbekistan.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2017 to 2021</BioYear>
+          Freelancer/Full-stack JavaScript developer
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2020 to 2021</BioYear>
+          Worked at AVTECH Distribution
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2020 to 2022</BioYear>
+          Worked at KAIS Logistics  
+        </BioSection>
+        <BioSection>
+          <BioYear>2021 to 2022</BioYear>
+          Worked at EPAM Systems (Burberry)
         </BioSection>
       </Section>
 
@@ -135,12 +136,16 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Mechanical keyboards, Swimming, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          <Link href="https://stackoverflow.com/users/12924484/ismoil-shokirov" target="_blank">
+            Contributing on StackOverflow
           </Link>
           ,{' '}
           <Link href="https://gallery.shokirov.uz#portfolio" target="_blank">
             Photography
+          </Link>
+          ,{' '}
+          <Link href="https://blog.shokirov.uz" target="_blank">
+            Writing Blog posts
           </Link>
         </Paragraph>
       </Section>
@@ -151,13 +156,13 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/ismoil793" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="lightblue"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @ismoil793
               </Button>
             </Link>
           </ListItem>
