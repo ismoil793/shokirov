@@ -17,9 +17,9 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import { IoLogoGithub,IoLogoStackoverflow,  IoLogoLinkedin } from 'react-icons/io5'
+import thumbPost1 from '../public/images/posts/2.jpg'
+import thumbPost2 from '../public/images/posts/3.jpg'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -84,7 +84,7 @@ const Home = () => (
           passion for building digital services/stuff he wants. He has a knack
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera and traveling. Currently, he is studying 
+          hanging out with his camera and traveling. Currently, he is studying
           Master&apos;s degree in Computer Science.
           {/* <NextLink href="/works/inkdrop" passHref scroll={false}> */}
             {/* <Link>Inkdrop</Link> */}
@@ -97,7 +97,9 @@ const Home = () => (
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
+            <Button
+                className={`theme-btn--${useColorModeValue('light', 'dark')}`}
+                rightIcon={<ChevronRightIcon />} colorScheme="blue">
               My portfolio
             </Button>
           </NextLink>
@@ -122,7 +124,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2020 to 2022</BioYear>
-          Worked at KAIS Logistics  
+          Worked at KAIS Logistics
         </BioSection>
         <BioSection>
           <BioYear>2021 to 2022</BioYear>
@@ -136,11 +138,11 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Mechanical keyboards, Swimming, Music,{' '}
-          <Link href="https://stackoverflow.com/users/12924484/ismoil-shokirov" target="_blank">
-            Contributing on StackOverflow
+          <Link href="https://stackoverflow.com/users/12924484/ismoil-shokirov?tab=answers" target="_blank">
+            StackOverflow Q&A
           </Link>
           ,{' '}
-          <Link href="https://gallery.shokirov.uz#portfolio" target="_blank">
+          <Link href="https://gallery.shokirov.uz/#portfolio" target="_blank">
             Photography
           </Link>
           ,{' '}
@@ -167,36 +169,25 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://stackoverflow.com/users/12924484/ismoil-shokirov" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="lightblue"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoStackoverflow />}
               >
-                @inkdrop_app (English)
+                StackOverflow
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://www.linkedin.com/in/ismoil-shokirov/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="lightblue"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="lightblue"
-                leftIcon={<IoLogoInstagram />}
+                leftIcon={<IoLogoLinkedin />}
                 marginBottom={5}
               >
-                @craftzdog
+                LinkedIn
               </Button>
             </Link>
           </ListItem>
@@ -204,24 +195,29 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
+            href="https://blog.shokirov.uz/posts/what-is-use-strict-in-javascript"
+            title="JavaScript"
+            thumbnail={thumbPost1}
+            imgHeight="100%"
           >
-            My YouTube channel (&gt;100k subs)
+            Post about &apos;use strict&apos;
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            href="https://stackoverflow.com/a/67670615/12924484"
+            title="StackOverflow"
+            thumbnail={thumbPost2}
+            imgHeight="100%"
           >
-            A Markdown note-taking app
+            Location is not defined error in React + Next js
           </GridItem>
         </SimpleGrid>
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
+            <Button
+                className={`theme-btn--${useColorModeValue('light', 'dark')}`}
+                rightIcon={<ChevronRightIcon />} colorScheme="blue"
+            >
               Popular posts
             </Button>
           </NextLink>

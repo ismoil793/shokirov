@@ -25,3 +25,8 @@ body {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
+
+.theme-btn--dark {
+    background-color: #3091F4 !important;
+    color: #fff !important;
+}
