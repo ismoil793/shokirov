@@ -24,9 +24,9 @@ const LogoBox = styled.span`
 const Logo = () => {
   return (
     <Link href="/" scroll={false}>
-      <a className='nav-logo'>
+      <a className="nav-logo">
         <LogoBox>
-          <div className='react-logo'>
+          <div className="react-logo">
             <FaReact />
           </div>
           <Text

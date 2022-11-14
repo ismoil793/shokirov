@@ -1,32 +1,30 @@
-html[data-theme="light"] body {
-    background: radial-gradient(at 71% 77%,
-            #FFCC81 0,
-            transparent 21%),
-        radial-gradient(at 36% 47%, #F0E7DB 0, transparent 50%),
-        radial-gradient(at 54% 29%, #9BFFCF 0, transparent 28%),
-        radial-gradient(at 45% 51%, #FFCC81 0, transparent 53%),
-        radial-gradient(at 73% 44%, #9BFFCF 0, transparent 54%),
-        radial-gradient(at 24% 7%, #F0E7DB 0, transparent 40%),
-        radial-gradient(at 76% 46%, #FFCC81 0, transparent 50%);
+html[data-theme='light'] body {
+  background: radial-gradient(at 71% 77%, #ffcc81 0, transparent 21%),
+    radial-gradient(at 36% 47%, #f0e7db 0, transparent 50%),
+    radial-gradient(at 54% 29%, #9bffcf 0, transparent 28%),
+    radial-gradient(at 45% 51%, #ffcc81 0, transparent 53%),
+    radial-gradient(at 73% 44%, #9bffcf 0, transparent 54%),
+    radial-gradient(at 24% 7%, #f0e7db 0, transparent 40%),
+    radial-gradient(at 76% 46%, #ffcc81 0, transparent 50%);
 }
 
 html,
 body {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .react-logo {
-    overflow: hidden;
-    transition-duration: 1s;
-    transition-property: transform;
+  overflow: hidden;
+  transition-duration: 1s;
+  transition-property: transform;
 }
 
 .nav-logo:hover .react-logo {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 
 .theme-btn--dark {
-    background-color: #3091F4 !important;
-    color: #fff !important;
+  background-color: #3091f4 !important;
+  color: #fff !important;
 }

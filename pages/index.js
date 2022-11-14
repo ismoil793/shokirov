@@ -17,7 +17,11 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoGithub,IoLogoStackoverflow,  IoLogoLinkedin } from 'react-icons/io5'
+import {
+  IoLogoGithub,
+  IoLogoStackoverflow,
+  IoLogoLinkedin
+} from 'react-icons/io5'
 import thumbPost1 from '../public/images/posts/2.jpg'
 import thumbPost2 from '../public/images/posts/3.jpg'
 import Image from 'next/image'
@@ -87,9 +91,9 @@ const Home = () => (
           hanging out with his camera and traveling. Currently, he is studying
           Master&apos;s degree in Computer Science.
           {/* <NextLink href="/works/inkdrop" passHref scroll={false}> */}
-            {/* <Link>Inkdrop</Link> */}
-          {/* </NextLink> */}
-          {' '}In his free time he posts blogs about programming tricks &quot;
+          {/* <Link>Inkdrop</Link> */}
+          {/* </NextLink> */} In his free time he posts blogs about programming
+          tricks &quot;
           <NextLink href="https://blog.shokirov.uz" passHref>
             <Link target="_blank">Ismoil logs</Link>
           </NextLink>
@@ -98,8 +102,10 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button
-                className={`theme-btn--${useColorModeValue('light', 'dark')}`}
-                rightIcon={<ChevronRightIcon />} colorScheme="blue">
+              className={`theme-btn--${useColorModeValue('light', 'dark')}`}
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="blue"
+            >
               My portfolio
             </Button>
           </NextLink>
@@ -138,7 +144,10 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Mechanical keyboards, Swimming, Music,{' '}
-          <Link href="https://stackoverflow.com/users/12924484/ismoil-shokirov?tab=answers" target="_blank">
+          <Link
+            href="https://stackoverflow.com/users/12924484/ismoil-shokirov?tab=answers"
+            target="_blank"
+          >
             StackOverflow Q&A
           </Link>
           ,{' '}
@@ -169,7 +178,10 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://stackoverflow.com/users/12924484/ismoil-shokirov" target="_blank">
+            <Link
+              href="https://stackoverflow.com/users/12924484/ismoil-shokirov"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="lightblue"
@@ -180,7 +192,10 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.linkedin.com/in/ismoil-shokirov/" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/ismoil-shokirov/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="lightblue"
@@ -215,16 +230,17 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
             <Button
-                className={`theme-btn--${useColorModeValue('light', 'dark')}`}
-                rightIcon={<ChevronRightIcon />} colorScheme="blue"
+              className={`theme-btn--${useColorModeValue('light', 'dark')}`}
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="blue"
             >
               Popular posts
             </Button>
           </NextLink>
         </Box>
-      </Section >
-    </Container >
-  </Layout >
+      </Section>
+    </Container>
+  </Layout>
 )
 
 export default Home
