@@ -32,6 +32,10 @@ const Posts = () => (
             title="Dynamically get window width and height in ReactJS"
             thumbnail={thumbPortfolio}
             href="https://blog.shokirov.uz/posts/react-hoook-useDeviceSize"
+            imgProps={{
+              width: 260,
+              height: 146
+            }}
           />
           <GridItem
             title="Fix location is not defined error in Next JS"
@@ -65,6 +69,10 @@ const Posts = () => (
             title="Check out more posts"
             thumbnail={thumbFinancialGoal}
             href="https://blog.shokirov.uz/"
+            imgProps={{
+              width: 260,
+              height: 146
+            }}
           />
         </SimpleGrid>
       </Section>
