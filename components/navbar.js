@@ -28,6 +28,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
         target={target}
+        borderRadius={5}
         {...props}
       >
         {children}
@@ -75,7 +76,7 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="https://blog.shokirov.uz" path={path}>
+          <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
           <LinkItem href="https://gallery.shokirov.uz/#portfolio" path={path}>
@@ -113,17 +114,17 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="https://blog.shokirov.uz" passHref>
+                <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="https://uses.craftz.dog/" passHref>
-                  <MenuItem as={Link}>Uses</MenuItem>
-                </NextLink>
+                {/*<NextLink href="https://uses.craftz.dog/" passHref>*/}
+                {/*  <MenuItem as={Link}>Uses</MenuItem>*/}
+                {/*</NextLink>*/}
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://gallery.shokirov.uz/#portfolio"
                 >
-                  View Source
+                  Gallery
                 </MenuItem>
               </MenuList>
             </Menu>
