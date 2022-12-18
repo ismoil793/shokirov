@@ -40,8 +40,6 @@ const Home = () => {
     setIsMobile(isMobileDevice())
   }, [])
 
-  console.log(isMobile)
-
   return (
     <Layout>
       <Container maxW="container.md">
