@@ -132,7 +132,7 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2017 to 2021</BioYear>
-            Freelancer/Full-stack JavaScript developer
+            Freelancer/Full-stack developer
           </BioSection>
           <BioSection>
             <BioYear>2020 to 2021</BioYear>
