@@ -131,16 +131,12 @@ const Home = () => {
             Born in Tashkent, Uzbekistan.
           </BioSection>
           <BioSection>
-            <BioYear>2017 to 2021</BioYear>
-            Freelancer/Full-stack developer
+            <BioYear>2018 to 2020</BioYear>
+            Worked at Fintechlab UZ
           </BioSection>
           <BioSection>
             <BioYear>2020 to 2021</BioYear>
             Worked at AVTECH Distribution
-          </BioSection>
-          <BioSection>
-            <BioYear>2020 to 2022</BioYear>
-            Worked at KAIS Logistics
           </BioSection>
           <BioSection>
             <BioYear>2021 to 2022</BioYear>
