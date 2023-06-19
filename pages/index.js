@@ -149,7 +149,7 @@ const Home = () => {
             I ❤️
           </Heading>
           <Paragraph>
-            Mechanical keyboards, Swimming, Music,{' '}
+            Mechanical keyboards, Swimming,{' '}
             <Link
               href="https://stackoverflow.com/users/12924484/ismoil-shokirov?tab=answers"
               target={!isMobile ? '_blank' : ''}
