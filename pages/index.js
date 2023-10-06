@@ -94,15 +94,14 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-            Ismoil is a full-stack developer from Tashkent, Uzbekistan with a
-            passion for building digital services/stuff he wants. He has a knack
-            for all things launching products, from planning and designing all
-            the way to solving real-life problems with code. When not online, he
-            loves hanging out with his camera and traveling. Currently, he is
+            I am a full-stack developer with a passion for building digital services. 
+            I have experience in launching products, from planning and designing all
+            the way to solving real-life problems with code. When not online, I
+            like traveling. Currently, I am
             studying Master&apos;s degree in Computer Science.
             {/* <NextLink href="/works/inkdrop" passHref scroll={false}> */}
             {/* <Link>Inkdrop</Link> */}
-            {/* </NextLink> */} In his free time he posts blogs about
+            {/* </NextLink> */} In my free time I like cooking and writing post blogs about
             programming and technology &quot;
             <NextLink href="https://blog.shokirov.uz" passHref>
               <Link target={!isMobile ? '_blank' : ''}>Ismoil logs</Link>
