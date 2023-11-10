@@ -157,13 +157,6 @@ const Home = () => {
             </Link>
             ,{' '}
             <Link
-              href="https://gallery.shokirov.uz/#portfolio"
-              target={!isMobile ? '_blank' : ''}
-            >
-              Photography
-            </Link>
-            ,{' '}
-            <Link
               href="https://blog.shokirov.uz"
               target={!isMobile ? '_blank' : ''}
             >
