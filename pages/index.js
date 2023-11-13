@@ -126,7 +126,7 @@ const Home = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear>1998</BioYear>
+            <BioYear>0b11111001110</BioYear>
             Born in Tashkent, Uzbekistan.
           </BioSection>
           <BioSection>
@@ -139,7 +139,7 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2021 to 2022</BioYear>
-            Worked at EPAM Systems (Burberry)
+            Worked at Burberry (EPAM Systems)
           </BioSection>
         </Section>
 
