@@ -21,7 +21,8 @@ import { GridItem } from '../components/grid-item'
 import {
   IoLogoGithub,
   IoLogoStackoverflow,
-  IoLogoLinkedin
+  IoLogoLinkedin,
+  IoLogoYoutube
 } from 'react-icons/io5'
 import Image from 'next/image'
 import thumbPost1 from '../public/images/posts/2.jpg'
@@ -203,9 +204,23 @@ const Home = () => {
                   variant="ghost"
                   colorScheme="lightblue"
                   leftIcon={<IoLogoLinkedin />}
-                  marginBottom={5}
                 >
                   LinkedIn
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.youtube.com/@ismoilshokirov"
+                target={!isMobileDevice ? '_blank' : ''}
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="lightblue"
+                  leftIcon={<IoLogoYoutube />}
+                  marginBottom={5}
+                >
+                  YouTube
                 </Button>
               </Link>
             </ListItem>
