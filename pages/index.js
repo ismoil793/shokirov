@@ -26,7 +26,7 @@ import {
 import Image from 'next/image'
 import thumbPost1 from '../public/images/posts/2.jpg'
 import thumbPost2 from '../public/images/posts/3.jpg'
-import { isMobileDevice } from '../lib/device'
+import { useDevice } from '../lib/device'
 import { getRandomAvatar } from '../lib/avatar-randomizer'
 
 const ProfileImage = chakra(Image, {
@@ -34,11 +34,7 @@ const ProfileImage = chakra(Image, {
 })
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    setIsMobile(isMobileDevice())
-  }, [])
+  const {isMobileDevice} = useDevice()
 
   return (
     <Layout>
@@ -104,7 +100,7 @@ const Home = () => {
             {/* </NextLink> */} In my free time I like cooking and writing post blogs about
             programming and technology &quot;
             <NextLink href="https://blog.shokirov.uz" passHref>
-              <Link target={!isMobile ? '_blank' : ''}>Ismoil logs</Link>
+              <Link target={!isMobileDevice ? '_blank' : ''}>Ismoil logs</Link>
             </NextLink>
             &quot;
           </Paragraph>
@@ -151,14 +147,14 @@ const Home = () => {
             Mechanical keyboards, Swimming,{' '}
             <Link
               href="https://stackoverflow.com/users/12924484/ismoil-shokirov?tab=answers"
-              target={!isMobile ? '_blank' : ''}
+              target={!isMobileDevice ? '_blank' : ''}
             >
               StackOverflow Q&A
             </Link>
             ,{' '}
             <Link
               href="https://blog.shokirov.uz"
-              target={!isMobile ? '_blank' : ''}
+              target={!isMobileDevice ? '_blank' : ''}
             >
               Writing Blog posts
             </Link>
@@ -173,21 +169,21 @@ const Home = () => {
             <ListItem>
               <Link
                 href="https://github.com/ismoil793"
-                target={!isMobile ? '_blank' : ''}
+                target={!isMobileDevice ? '_blank' : ''}
               >
                 <Button
                   variant="ghost"
                   colorScheme="lightblue"
                   leftIcon={<IoLogoGithub />}
                 >
-                  @ismoil793
+                  GitHub
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link
                 href="https://stackoverflow.com/users/12924484/ismoil-shokirov"
-                target={!isMobile ? '_blank' : ''}
+                target={!isMobileDevice ? '_blank' : ''}
               >
                 <Button
                   variant="ghost"
@@ -201,7 +197,7 @@ const Home = () => {
             <ListItem>
               <Link
                 href="https://www.linkedin.com/in/ismoil-shokirov/"
-                target={!isMobile ? '_blank' : ''}
+                target={!isMobileDevice ? '_blank' : ''}
               >
                 <Button
                   variant="ghost"

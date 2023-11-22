@@ -16,7 +16,8 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoMail, IoMailOutline } from 'react-icons/io5'
+import { useDevice } from '../lib/device'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -39,6 +40,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
+
+  const {isMobileDevice} = useDevice()
 
   return (
     <Box
@@ -83,7 +86,18 @@ const Navbar = props => {
             Gallery
           </LinkItem>
           <LinkItem
-            target="_blank"
+            href="mailto:ismoil.793@gmail.com"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoMailOutline />
+            Contact
+          </LinkItem>
+          <LinkItem
+            target={!isMobileDevice ? '_blank' : ''}
             href="https://github.com/ismoil793"
             path={path}
             display="inline-flex"
@@ -92,8 +106,19 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Github
           </LinkItem>
+          <LinkItem
+            target={!isMobileDevice ? '_blank' : ''}
+            href="https://www.linkedin.com/in/ismoil-shokirov"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoLinkedin />
+          </LinkItem>
+          
         </Stack>
 
         <Box flex={1} align="right">
@@ -117,14 +142,32 @@ const Navbar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                {/*<NextLink href="https://uses.craftz.dog/" passHref>*/}
-                {/*  <MenuItem as={Link}>Uses</MenuItem>*/}
-                {/*</NextLink>*/}
                 <MenuItem
                   as={Link}
                   href="https://gallery.shokirov.uz/#portfolio"
                 >
                   Gallery
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="mailto:ismoil.793@gmail.com"
+                >
+                  <IoMail />
+                  <span style={{marginLeft: 5}}>Contact me</span>
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/ismoil793"
+                >
+                  <IoLogoGithub />
+                  <span style={{marginLeft: 5}}>GitHub</span>
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="https://www.linkedin.com/in/ismoil-shokirov"
+                >
+                  <IoLogoLinkedin />
+                  <span style={{marginLeft: 5}}>LinkedIn</span>
                 </MenuItem>
               </MenuList>
             </Menu>
