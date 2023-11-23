@@ -28,8 +28,7 @@ const ThemeToggleButton = () => {
       >
         <IconButton
           aria-label="Toggle theme"
-          // className={`theme-btn--${useColorModeValue('light', 'dark')}`}
-          // colorScheme={useColorModeValue('yellow', 'gray')}
+          className={`theme-btn--${useColorModeValue('light', 'dark')}`}
           colorScheme={useColorModeValue('purple', 'orange')}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={handleColorModeToggle}
