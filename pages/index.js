@@ -34,7 +34,7 @@ const ProfileImage = chakra(Image, {
 })
 
 const Home = () => {
-  const {isMobileDevice} = useDevice()
+  const { isMobileDevice } = useDevice()
 
   return (
     <Layout>
@@ -90,7 +90,7 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-            I am a full-stack developer with a passion for building digital services. 
+            I am a full-stack developer with a passion for building digital services.
             I have experience in launching products, from planning and designing all
             the way to solving real-life problems with code. When not online, I
             like traveling. Currently, I am
@@ -107,7 +107,7 @@ const Home = () => {
           <Box align="center" my={4}>
             <NextLink href="/works" passHref scroll={false}>
               <Button
-                className={`theme-btn--${useColorModeValue('light', 'dark')}`}
+                className={`theme-btn--${useColorModeValue('light', 'dark')} cta`}
                 rightIcon={<ChevronRightIcon />}
                 colorScheme="blue"
               >
@@ -247,7 +247,7 @@ const Home = () => {
           <Box align="center" my={4}>
             <NextLink href="/posts" passHref scroll={false}>
               <Button
-                className={`theme-btn--${useColorModeValue('light', 'dark')}`}
+                className={`theme-btn--${useColorModeValue('light', 'dark')} cta`}
                 rightIcon={<ChevronRightIcon />}
                 colorScheme="blue"
               >

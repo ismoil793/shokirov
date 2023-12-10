@@ -7,8 +7,8 @@ html[data-theme='light'] body {
     radial-gradient(at 24% 7%, #f0e7db 0, transparent 40%),
     radial-gradient(at 76% 46%, #ffcc81 0, transparent 50%); */
 
-    background: rgba(240,231,219,1);
-    background: linear-gradient(90deg, rgba(240,231,219, 0.8) 0%, rgba(255,204,129, 0.4) 35%, rgba(240,231,219,0.8) 100%);
+  background: rgba(240, 231, 219, 1);
+  background: linear-gradient(90deg, rgba(240, 231, 219, 0.8) 0%, rgba(255, 204, 129, 0.4) 35%, rgba(240, 231, 219, 0.8) 100%);
 }
 
 html,
@@ -27,14 +27,16 @@ body {
   -webkit-transform: rotate(360deg);
 }
 
-.theme-btn--light {
+.theme-btn--light,
+.theme-btn--dark.cta {
   background-color: #3091f4 !important;
   color: #fff !important;
   transition: opacity 300ms ease;
 }
 
 
-.theme-btn--light:hover {
+.theme-btn--light:hover,
+.theme-btn--dark.cta:hover {
   transition: opacity 300ms ease;
   opacity: 0.85;
 }
