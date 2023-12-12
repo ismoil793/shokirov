@@ -9,5 +9,5 @@ export const BioSection = styled(Box)`
 export const BioYear = styled.span`
   font-weight: bold;
   margin-right: ${props => props.marginRight || '1em'};
-  font-size: ${props => props.fontSize || 'inherit'};
+  font-size: ${props => props.fontSize || '18px'};
 `
