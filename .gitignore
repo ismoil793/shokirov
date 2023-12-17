@@ -5,3 +5,4 @@ dist
 .env
 .dccache
 .idea
+.DS_Store
