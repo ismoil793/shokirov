@@ -137,6 +137,10 @@ const Home = () => {
             <BioYear>2021 to 2022</BioYear>
             Worked at Burberry (EPAM Systems)
           </BioSection>
+          <BioSection>
+            <BioYear>2022 to present</BioYear>
+            Software Engineer at Thread (not Threads)
+          </BioSection>
         </Section>
 
         <Section delay={0.3}>
