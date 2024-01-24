@@ -239,12 +239,12 @@ const Home = () => {
               Post about &apos;use strict&apos;
             </GridItem>
             <GridItem
-              href="https://stackoverflow.com/a/67670615/12924484"
+              href="https://stackoverflow.com/users/12924484/ismoil-shokirov?tab=answers"
               title="StackOverflow"
               thumbnail={thumbPost2}
               imgHeight="100%"
             >
-              Location is not defined error in React + Next js
+              2500+ reputation and 7.2m+ people reached
             </GridItem>
           </SimpleGrid>
 

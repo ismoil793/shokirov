@@ -6,12 +6,14 @@ const Footer = () => {
   const { pathname } = useRouter()
 
   const shouldDisplayInspiration = useMemo(() => {
-    return pathname === '/'
+    return pathname !== '/'
   }, [pathname])
+
+  const dateCopy = useMemo(() => <span>&copy; 2020-{new Date().getFullYear()} Ismoil Shokirov. All Rights Reserved.</span>, [])
 
   return (
     <Box align="center" opacity={0.4} fontSize="sm">
-      &copy; {new Date().getFullYear()} Ismoil Shokirov. All Rights Reserved.
+      {dateCopy}
       {shouldDisplayInspiration && (
         <div style={{ marginTop: 20 }}>
           Inspired by{' '}
