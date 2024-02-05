@@ -1,3 +1,4 @@
+import axios from 'axios'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
@@ -41,7 +42,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 const Navbar = props => {
   const { path } = props
 
-  const {isMobileDevice} = useDevice()
+  const { isMobileDevice } = useDevice()
 
   return (
     <Box
@@ -86,12 +87,17 @@ const Navbar = props => {
             Gallery
           </LinkItem>
           <LinkItem
-            href="mailto:ismoil.793@gmail.com"
+            // href="mailto:ismoil.793@gmail.com"
+            href="#"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
+            onClick={() => {
+              const msg = prompt("Ask me anything, include your email at the end")
+              axios.post(`https://lavugxtv4onok72t7r53vapeki0hfxgo.lambda-url.us-east-1.on.aws?text=${msg}`)
+            }}
           >
             <IoMailOutline />
             Contact
@@ -118,7 +124,7 @@ const Navbar = props => {
           >
             <IoLogoLinkedin />
           </LinkItem>
-          
+
         </Stack>
 
         <Box flex={1} align="right">
@@ -153,21 +159,21 @@ const Navbar = props => {
                   href="mailto:ismoil.793@gmail.com"
                 >
                   <IoMail />
-                  <span style={{marginLeft: 5}}>Contact me</span>
+                  <span style={{ marginLeft: 5 }}>Contact me</span>
                 </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/ismoil793"
                 >
                   <IoLogoGithub />
-                  <span style={{marginLeft: 5}}>GitHub</span>
+                  <span style={{ marginLeft: 5 }}>GitHub</span>
                 </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://www.linkedin.com/in/ismoil-shokirov"
                 >
                   <IoLogoLinkedin />
-                  <span style={{marginLeft: 5}}>LinkedIn</span>
+                  <span style={{ marginLeft: 5 }}>LinkedIn</span>
                 </MenuItem>
               </MenuList>
             </Menu>
