@@ -6,7 +6,7 @@ const Footer = () => {
   const { pathname } = useRouter()
 
   const shouldDisplayInspiration = useMemo(() => {
-    return pathname !== '/'
+    return pathname !== '/' && pathname !== '/works'
   }, [pathname])
 
   const dateCopy = useMemo(() => <span>&copy; 2020-{new Date().getFullYear()} Ismoil Shokirov. All Rights Reserved.</span>, [])
@@ -14,8 +14,18 @@ const Footer = () => {
   return (
     <Box align="center" opacity={0.4} fontSize="sm">
       {dateCopy}
+      <div>
+        <a
+          href="https://www.buymeacoffee.com/ismoil"
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-500 underline"
+        >
+          Support me
+        </a>
+      </div>
       {shouldDisplayInspiration && (
-        <div style={{ marginTop: 20 }}>
+        <div style={{ marginTop: 10 }}>
           Inspired by{' '}
           <a href="https://www.craftz.dog/" target="_blank" rel="noreferrer">
             Takuya Matsuyama
