@@ -28,6 +28,7 @@ import thumbPost1 from '../public/images/posts/2.jpg'
 import thumbPost2 from '../public/images/posts/3.jpg'
 import { useDevice } from '../lib/device'
 import { getRandomAvatar } from '../lib/avatar-randomizer'
+import { FaTelegramPlane } from 'react-icons/fa'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -170,6 +171,20 @@ const Home = () => {
             On the web
           </Heading>
           <List>
+            <ListItem>
+              <Link
+                href="https://t.me/qisqalog"
+                target={!isMobileDevice ? '_blank' : ''}
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="lightblue"
+                  leftIcon={<FaTelegramPlane />}
+                >
+                  Telegram channel
+                </Button>
+              </Link>
+            </ListItem>
             <ListItem>
               <Link
                 href="https://github.com/ismoil793"

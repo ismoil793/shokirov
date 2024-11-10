@@ -1,4 +1,3 @@
-import axios from 'axios'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
@@ -19,6 +18,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub, IoLogoLinkedin, IoMail, IoMailOutline } from 'react-icons/io5'
 import { useDevice } from '../lib/device'
+import { FaTelegramPlane } from 'react-icons/fa'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -87,17 +87,16 @@ const Navbar = props => {
             Gallery
           </LinkItem>
           <LinkItem
-            // href="mailto:ismoil.793@gmail.com"
-            href="#"
+            href="mailto:ismoil.shokirov.dev@gmail.com"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
-            onClick={() => {
-              const msg = prompt("Ask me anything, include your email at the end")
-              axios.post(`https://lavugxtv4onok72t7r53vapeki0hfxgo.lambda-url.us-east-1.on.aws?text=${msg}`)
-            }}
+            // onClick={() => {
+            //   const msg = prompt("Ask me anything, include your email at the end")
+            //   axios.post(`https://lavugxtv4onok72t7r53vapeki0hfxgo.lambda-url.us-east-1.on.aws?text=${msg}`)
+            // }}
           >
             <IoMailOutline />
             Contact
@@ -113,7 +112,7 @@ const Navbar = props => {
           >
             <IoLogoGithub />
           </LinkItem>
-          <LinkItem
+          {/* <LinkItem
             target={!isMobileDevice ? '_blank' : ''}
             href="https://www.linkedin.com/in/ismoil-shokirov"
             path={path}
@@ -123,6 +122,17 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoLinkedin />
+          </LinkItem> */}
+          <LinkItem
+            target={!isMobileDevice ? '_blank' : ''}
+            href="https://t.me/qisqalog"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <FaTelegramPlane />
           </LinkItem>
 
         </Stack>
@@ -156,7 +166,7 @@ const Navbar = props => {
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="mailto:ismoil.793@gmail.com"
+                  href="mailto:ismoil.shokirov.dev@gmail.com"
                 >
                   <IoMail />
                   <span style={{ marginLeft: 5 }}>Contact me</span>
