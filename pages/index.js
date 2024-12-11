@@ -98,6 +98,7 @@ const Home = () => {
                 borderRadius="full"
                 width="100%"
                 height="100%"
+                unoptimized={true}
               />
             </Box>
           </Box>
