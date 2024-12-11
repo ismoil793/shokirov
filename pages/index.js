@@ -39,7 +39,7 @@ const Home = () => {
   const { isMobileDevice } = useDevice()
 
   const metaTitle = "Ismoil Shokirov | Full-Stack Software Engineer"
-  const metaDescription = "Full-Stack Software Engineer with over 7 years of experience"
+  const metaDescription = "Full-Stack Software Engineer with 7+ years of experience and a Master’s degree in Computer Science. Passionate about building scalable, high-quality applications."
   const metaKeywords = "Ismoil Shokirov, Senior Software Engineer, full-stack, ReactJS, NextJS, NodeJS, Typescript, Javascript, Uzbekistan, USA"
 
   return (
