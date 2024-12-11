@@ -1,4 +1,5 @@
 import NextLink from 'next/link'
+import Head from 'next/head'
 import {
   Link,
   Container,
@@ -37,8 +38,24 @@ const ProfileImage = chakra(Image, {
 const Home = () => {
   const { isMobileDevice } = useDevice()
 
+  const metaTitle = "Ismoil Shokirov | Full-Stack Software Engineer"
+  const metaDescription = "Full-Stack Software Engineer with over 7 years of experience"
+
   return (
     <Layout>
+      <Head>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+
+        <meta name="author" content="Ismoil Shokirov" />
+        <meta name="keywords" content={"Ismoil Shokirov, Senior Software Engineer, full-stack, ReactJS, NextJS, NodeJS, Typescript, Javascript, Uzbekistan, USA"} />
+        <meta property="og:image" content={"https://shokirov.uz/ismoil-linkedin.jpg"} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:site_name" content="shokirov.uz" />
+        <meta property="og:url" content={"https://shokirov.uz"} />
+      </Head>
       <Container maxW="container.md">
         <Box
           borderRadius="lg"
