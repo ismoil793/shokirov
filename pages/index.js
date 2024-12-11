@@ -40,6 +40,7 @@ const Home = () => {
 
   const metaTitle = "Ismoil Shokirov | Full-Stack Software Engineer"
   const metaDescription = "Full-Stack Software Engineer with over 7 years of experience"
+  const metaKeywords = "Ismoil Shokirov, Senior Software Engineer, full-stack, ReactJS, NextJS, NodeJS, Typescript, Javascript, Uzbekistan, USA"
 
   return (
     <Layout>
@@ -50,8 +51,8 @@ const Home = () => {
         <meta property="og:description" content={metaDescription} />
 
         <meta name="author" content="Ismoil Shokirov" />
-        <meta name="keywords" content={"Ismoil Shokirov, Senior Software Engineer, full-stack, ReactJS, NextJS, NodeJS, Typescript, Javascript, Uzbekistan, USA"} />
-        <meta property="og:image" content={"https://shokirov.uz/ismoil-linkedin.jpg"} />
+        <meta name="keywords" content={metaKeywords} />
+        <meta property="og:image" content={"https://shokirov.uz/images/avatars/ismoil-linkedin.jpg"} />
         <meta property="og:type" content={"website"} />
         <meta property="og:site_name" content="shokirov.uz" />
         <meta property="og:url" content={"https://shokirov.uz"} />
