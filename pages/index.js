@@ -26,7 +26,7 @@ import {
 } from 'react-icons/io5'
 import Image from 'next/image'
 import thumbPost1 from '../public/images/posts/2.jpg'
-import thumbPost2 from '../public/images/posts/3.jpg'
+import thumbPost2 from '../public/images/posts/3.png'
 import { useDevice } from '../lib/device'
 import { getRandomAvatar } from '../lib/avatar-randomizer'
 import { FaTelegramPlane } from 'react-icons/fa'
@@ -112,9 +112,11 @@ const Home = () => {
           <Paragraph>
             I am a full-stack developer with a passion for building digital services.
             I have experience in launching products, from planning and designing all
-            the way to solving real-life problems with code. When not online, I
-            like traveling. Currently, I am
-            studying Master&apos;s degree in Computer Science.
+            the way to solving real-life problems with code. Currently, I am
+            working as a Software Engineer at &quot;Thread Magic Inc.&quot; in Houston, TX.
+            I have Master&apos;s degree in CS from Maharishi International University
+            and Bachelor&apos;s degree in CS from INHA University.
+            When not online, I like traveling.
             {/* <NextLink href="/works/inkdrop" passHref scroll={false}> */}
             {/* <Link>Inkdrop</Link> */}
             {/* </NextLink> */} In my free time I like cooking and writing post blogs about
@@ -168,7 +170,6 @@ const Home = () => {
             I ❤️
           </Heading>
           <Paragraph>
-            Mechanical keyboards, Swimming,{' '}
             <Link
               href="https://stackoverflow.com/users/12924484/ismoil-shokirov?tab=answers"
               target={!isMobileDevice ? '_blank' : ''}
@@ -182,6 +183,13 @@ const Home = () => {
             >
               Writing Blog posts
             </Link>
+            ,{' '}
+            <Link
+                href="https://github.com/ismoil793"
+                target={!isMobileDevice ? '_blank' : ''}
+            >
+              Coding
+            </Link>
           </Paragraph>
         </Section>
 
@@ -190,6 +198,20 @@ const Home = () => {
             On the web
           </Heading>
           <List>
+            <ListItem>
+              <Link
+                  href="https://stackoverflow.com/users/12924484/ismoil-shokirov"
+                  target={!isMobileDevice ? '_blank' : ''}
+              >
+                <Button
+                    variant="ghost"
+                    colorScheme="lightblue"
+                    leftIcon={<IoLogoStackoverflow />}
+                >
+                  StackOverflow
+                </Button>
+              </Link>
+            </ListItem>
             <ListItem>
               <Link
                 href="https://t.me/qisqalog"
@@ -215,20 +237,6 @@ const Home = () => {
                   leftIcon={<IoLogoGithub />}
                 >
                   GitHub
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link
-                href="https://stackoverflow.com/users/12924484/ismoil-shokirov"
-                target={!isMobileDevice ? '_blank' : ''}
-              >
-                <Button
-                  variant="ghost"
-                  colorScheme="lightblue"
-                  leftIcon={<IoLogoStackoverflow />}
-                >
-                  StackOverflow
                 </Button>
               </Link>
             </ListItem>
@@ -278,7 +286,7 @@ const Home = () => {
               thumbnail={thumbPost2}
               imgHeight="100%"
             >
-              2500+ reputation and 7.2m+ people reached
+              3000+ reputation and 7.7m+ people reached
             </GridItem>
           </SimpleGrid>
 

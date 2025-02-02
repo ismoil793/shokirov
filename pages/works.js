@@ -12,6 +12,9 @@ import thumbAvtech from '../public/images/projects/avtech.jpg'
 import thumbFintech from '../public/images/projects/fintechlab.jpg'
 import thumbW2korea from '../public/images/projects/w2korea.jpg'
 import thumbPrinterShop from '../public/images/projects/printershop.jpg'
+import thumbThread from '../public/images/projects/thread.jpg'
+import thumbQisqa from '../public/images/projects/qisqa.jpg'
+import thumbMemes from '../public/images/projects/memes.jpg'
 
 const Works = () => (
   <Layout title="Works">
@@ -21,6 +24,16 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.1}>
+          <WorkGridItem
+              id="https://getthread.com/"
+              title="Thread"
+              thumbnail={thumbThread}
+          >
+            Thread revolutionizes the service delivery model with chat
+            and instant resolutions with AI & automation ✨
+          </WorkGridItem>
+        </Section>
         <Section delay={0.1}>
           <WorkGridItem
             id="https://us.burberry.com/"
@@ -75,9 +88,32 @@ const Works = () => (
           </WorkGridItem>
         </Section>
 
+        <Section delay={0.5}>
+          <WorkGridItem
+              id="https://eletron.uz/"
+              title="Eletron"
+              thumbnail={thumbEletron}
+          >
+            Eletron offers electrical appliances as lighting, diesel generators,
+            uninterruptible power supplies, automation, as well as integration
+            and implementation services.
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.6}>
+          <WorkGridItem
+              id="https://printershop.uz/"
+              thumbnail={thumbPrinterShop}
+              title="Printershop"
+          >
+            Commercial website to sell officially refurbished Canon printers.
+            Mainly focuses on Business-to-Business sector
+          </WorkGridItem>
+        </Section>
+
         <Section delay={0.3}>
           <WorkGridItem
-            id="https://tieaprons.com/"
+            id="https://ucook-rho.vercel.app/"
             thumbnail={thumbTieAprons}
             title="Tie Aprons"
           >
@@ -86,46 +122,24 @@ const Works = () => (
         </Section>
       </SimpleGrid>
 
-      {/*<Section delay={0.2}>*/}
-      {/*  <Divider my={6} />*/}
-
-      {/*  <Heading as="h3" fontSize={20} mb={4}>*/}
-      {/*    Collaborations*/}
-      {/*  </Heading>*/}
-      {/*</Section>*/}
-
-      {/*<SimpleGrid columns={[1, 1, 2]} gap={6}>*/}
-      {/*  <Section delay={0.3}>*/}
-      {/*    <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">*/}
-      {/*      A website of the elite app development and contracting agency based*/}
-      {/*      in Austria*/}
-      {/*    </WorkGridItem>*/}
-      {/*  </Section>*/}
-      {/*  <Section delay={0.3}>*/}
-      {/*    <WorkGridItem*/}
-      {/*      id="modetokyo"*/}
-      {/*      thumbnail={thumbModeTokyo}*/}
-      {/*      title="mode.tokyo"*/}
-      {/*    >*/}
-      {/*      The mode magazine for understanding to personally enjoy Japan*/}
-      {/*    </WorkGridItem>*/}
-      {/*  </Section>*/}
-      {/*  <Section delay={0.3}>*/}
-      {/*    <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">*/}
-      {/*      A VR Creative tools for fashion brands*/}
-      {/*    </WorkGridItem>*/}
-      {/*  </Section>*/}
-      {/*</SimpleGrid>*/}
-
       <Section delay={0.4}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Old works
+          Personal projects
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.5}>
+          <WorkGridItem
+              id="https://qisqa.uz/"
+              title="Qisqa"
+              thumbnail={thumbQisqa}
+          >
+            Qisqa is a ”link in bio” tool designed to consolidate and share all your links in a single, user‑friendly interface
+          </WorkGridItem>
+        </Section>
         <Section delay={0.5}>
           <WorkGridItem
             id="https://w2korea.github.io/"
@@ -137,27 +151,13 @@ const Works = () => (
             universities
           </WorkGridItem>
         </Section>
-
         <Section delay={0.5}>
           <WorkGridItem
-            id="https://eletron.uz/"
-            title="Eletron"
-            thumbnail={thumbEletron}
+              id="https://memes.uz/"
+              title="Memes uz"
+              thumbnail={thumbMemes}
           >
-            Eletron offers electrical appliances as lighting, diesel generators,
-            uninterruptible power supplies, automation, as well as integration
-            and implementation services.
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.6}>
-          <WorkGridItem
-            id="https://printershop.uz/"
-            thumbnail={thumbPrinterShop}
-            title="Printershop"
-          >
-            Commercial website to sell officially refurbished Canon printers.
-            Mainly focuses on Business-to-Business sector
+            Meme generator
           </WorkGridItem>
         </Section>
       </SimpleGrid>

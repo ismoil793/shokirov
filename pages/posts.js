@@ -7,6 +7,7 @@ import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portf
 import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
 import thumbPost1 from '../public/images/posts/4.jpg'
 import thumbPost2 from '../public/images/posts/5.jpg'
+import thumbPost6 from '../public/images/posts/6.jpg'
 
 import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
 
@@ -19,7 +20,16 @@ const Posts = () => (
 
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
+            <GridItem
+                title="Mastering Enterprise Applications with Java Spring Boot"
+                thumbnail={thumbPost6}
+                href="https://medium.com/@ismoil.793/mastering-enterprise-applications-with-java-spring-boot-9fbdf040790f"
+                imgProps={{
+                    width: 260,
+                    height: 146
+                }}
+            />
+            <GridItem
             title="What is 'use strict' in Javascript and its importance"
             thumbnail={thumbPost1}
             href="https://blog.shokirov.uz/posts/what-is-use-strict-in-javascript"
