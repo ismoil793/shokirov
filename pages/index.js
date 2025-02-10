@@ -29,7 +29,7 @@ import thumbPost1 from '../public/images/posts/2.jpg'
 import thumbPost2 from '../public/images/posts/3.png'
 import { useDevice } from '../lib/device'
 import { getRandomAvatar } from '../lib/avatar-randomizer'
-import { FaTelegramPlane } from 'react-icons/fa'
+import { FaMediumM, FaTelegramPlane } from 'react-icons/fa'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -121,6 +121,11 @@ const Home = () => {
             {/* <Link>Inkdrop</Link> */}
             {/* </NextLink> */} In my free time I like cooking and writing post blogs about
             programming and technology &quot;
+            <NextLink href="https://medium.com/@ismoil.793" passHref>
+              <Link target={!isMobileDevice ? '_blank' : ''}>Medium</Link>
+            </NextLink>
+            &quot;,
+            &quot;
             <NextLink href="https://blog.shokirov.uz" passHref>
               <Link target={!isMobileDevice ? '_blank' : ''}>Ismoil logs</Link>
             </NextLink>
@@ -178,7 +183,7 @@ const Home = () => {
             </Link>
             ,{' '}
             <Link
-              href="https://blog.shokirov.uz"
+              href="https://medium.com/@ismoil.793"
               target={!isMobileDevice ? '_blank' : ''}
             >
               Writing Blog posts
@@ -209,6 +214,20 @@ const Home = () => {
                     leftIcon={<IoLogoStackoverflow />}
                 >
                   StackOverflow
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://medium.com/@ismoil.793"
+                target={!isMobileDevice ? '_blank' : ''}
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="lightblue"
+                  leftIcon={<FaMediumM />}
+                >
+                  Medium
                 </Button>
               </Link>
             </ListItem>
