@@ -1,6 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
 import Layout from '../components/layouts/main'
-import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 import '../styles/global.css'
@@ -12,7 +11,6 @@ if (typeof window !== 'undefined') {
 function Website({ Component, pageProps, router }) {
   return (
     <Chakra cookies={pageProps.cookies}>
-      <Fonts />
       <Layout router={router}>
         <AnimatePresence
           mode="wait"
