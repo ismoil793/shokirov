@@ -13,9 +13,9 @@ const ALL_URLS = [
     {
         link: "https://blog.shokirov.uz"
     },
-    {
-        link: "https://gallery.shokirov.uz"
-    },
+    // {
+    //     link: "https://gallery.shokirov.uz"
+    // },
 ]
 
 function generateSiteMap(urls) {

@@ -83,9 +83,9 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem href="https://gallery.shokirov.uz/#portfolio" path={path}>
+          {/* <LinkItem href="https://gallery.shokirov.uz/#portfolio" path={path}>
             Gallery
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem
             href="mailto:ismoil.shokirov.dev@gmail.com"
             path={path}
