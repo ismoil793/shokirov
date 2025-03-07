@@ -149,7 +149,7 @@ const Home = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear marginRight="0.5em" fontSize="16px">0b11111001110</BioYear>
+            {/* <BioYear marginRight="0.5em" fontSize="16px">0b11111001110</BioYear> */}
             Born in Tashkent, Uzbekistan.
           </BioSection>
           <BioSection>
