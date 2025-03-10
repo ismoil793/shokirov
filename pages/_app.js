@@ -1,5 +1,4 @@
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Layout from '../components/layouts/main'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
@@ -24,7 +23,6 @@ function Website({ Component, pageProps, router }) {
         >
           <Component {...pageProps} key={router.route} />
           <Analytics />
-          <SpeedInsights />
         </AnimatePresence>
       </Layout>
     </Chakra>
